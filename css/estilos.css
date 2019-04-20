@@ -1,15 +1,14 @@
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
 }
@@ -17,10 +16,9 @@ h6{
 h1 {
   font-size: 40px;
   line-height: 1.5;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   color: white;
   margin: 0;
-  
 }
 h1 strong {
   color: #026fff;
@@ -36,18 +34,16 @@ h2 {
 
 .hero {
   height: 300px;
-  
+
   background-color: #1b2127;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.hero-image{
+.hero-image {
   object-fit: cover;
 }
-
 
 .portfolio {
   background: #fafafa;
@@ -99,7 +95,8 @@ h2 {
   justify-content: space-between;
 }
 
-ol,ul {
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -167,7 +164,7 @@ figure {
 .event-list-title {
   margin-left: 20px;
 }
-.event { 
+.event {
   margin: 10px;
   width: 480px;
   flex-shrink: 0;
@@ -233,7 +230,6 @@ figure {
   background-image: url('../images/instagram.svg');
 }
 
-
 .form-email input {
   border-color: gray;
   border-style: solid;
@@ -256,7 +252,7 @@ figure {
   margin-top: 10px;
 }
 
-.form-email h3 { 
+.form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -268,4 +264,10 @@ figure {
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    border: 10px solid green;
+  }
 }
