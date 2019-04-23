@@ -8,18 +8,16 @@
       href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> -->
+    <!-- <link
+      rel="stylesheet"
+      href="css/media.css"
+      media="screen and (max-width:768px)"
+    /> -->
     <link rel="stylesheet" href="css/estilos.css" />
-    <!-- <style>
-      @media screen and (max-width: 768px) {
-        body {
-          border: 10px solid blue;
-        }
-      }
-    </style> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -44,7 +42,7 @@
         </nav>
       </div>
     </header>
-    <!-- <section class="hero">
+    <section class="hero">
       <div class="container">
         <h1>
           Hola! Soy <strong>Leonidas Esteban</strong> <br />
@@ -59,7 +57,7 @@
           alt="imagen principal del sitio"
         />
       </div>
-    </section> -->
+    </section>
     <section id="portafolio" class="portfolio">
       <div class="container">
         <h2>Portafolio (Proyectos Destacados)</h2>
@@ -123,10 +121,22 @@
         </article>
       </div>
     </section>
-    <!-- <div class="container">
+
+    <div class="container">
       <h2 class="event-list-title">Más sobre mi experiencia</h2>
-    </div> -->
-    <!-- <section id="eventos" class="event-list">
+    </div>
+    <section id="eventos" class="event-list">
+      <div class="flexible-video" class="container">
+        <iframe
+          class="youtube-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8EmQOwOMi3A"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <div class="container">
         <article class="event">
           <figure class="event-imageContainer">
@@ -149,7 +159,14 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+            <video
+              class="html-video"
+              src="videos/f8.mp4"
+              width="1280"
+              height="720"
+              controls
+            ></video>
+            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf México 2018</h3>
@@ -168,7 +185,14 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+            <video
+              class="html-video"
+              src="videos/f8.mp4"
+              width="1280"
+              height="720"
+              controls
+            ></video>
+            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf México 2018</h3>
@@ -187,7 +211,15 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+            <!-- <iframe
+              class="youtube-video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/8EmQOwOMi3A"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf México 2018</h3>
@@ -214,27 +246,28 @@
           <button>Enviar</button>
         </form>
         <div class="social">
-          <a
+          <i
             href="https://twitter.com/leonidasesteban"
-            class="social-link twitter"
-          ></a>
-          <a
+            class="icon-twitter"
+          ></i>
+          <i
             href="https://facebook.com/leonidas.esteban"
-            class="social-link facebook"
-          ></a>
-          <a
-            href="https://github.com/leonidasesteban"
-            class="social-link github"
-          ></a>
-          <a
+            class="icon-facebook"
+          ></i>
+          <i href="https://github.com/leonidasesteban" class="icon-github"></i>
+          <i
             href="https://instagram.com/leonidasesteban"
-            class="social-link instagram"
-          ></a>
+            class="icon-instagram"
+          ></i>
+          <i
+            href="https://linkedin.com/leonidasesteban"
+            class="icon-linkedin"
+          ></i>
         </div>
       </div>
     </section>
-    <footer class="footer"> -->
-      <!-- <div class="container">
+    <footer class="footer">
+      <div class="container">
         <div>
           <p>
             Curso de Desarrollo web online 2018
@@ -243,11 +276,12 @@
         </div>
         <div>
           <p>
-            Designed with <\3 by
+            Designed with ❤ by
             <a href="https://twitter.com/thespianartist">@thespianartist</a>
           </p>
         </div>
-      </div> -->
-    <!-- </footer> -->
+      </div>
+    </footer>
+    <script src="script/buger.js"></script>
   </body>
 </html>
